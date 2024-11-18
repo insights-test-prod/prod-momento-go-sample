@@ -1,0 +1,7 @@
+on:
+  &nbsp;&nbsp;workflow_dispatch:
+  jobs:
+  &nbsp;&nbsp;Job1:
+  &nbsp;&nbsp;steps:
+  &nbsp;&nbsp;- uses: docker:// golang:1.20.3-alpine3.17
+  &nbsp;&nbsp;run: echo "hello world"
