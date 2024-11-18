@@ -1,0 +1,1 @@
+apiVersion: automation.cloudbees.io/v1alpha1\nkind: workflow\nname: My workflow\n\non:\n  push:\n    branches:\n      - '**'\n\njobs:\n  build:\n    steps:\n      - name: Say hello\n        uses: docker://golang:1.20.3-alpine3.17\n        shell: sh\n        run: |\n          echo \"hello world\"\n"
