@@ -3,7 +3,7 @@ kind: workflow
 name: My workflow
 on:
   schedule:
-    - cron: 46 * * * *
+    - cron: 19 * * * *
 jobs:
   build:
     steps:
@@ -12,4 +12,5 @@ jobs:
         shell: sh
         run: |
           echo "Scheduled workflow"
-          echo `date`
+          echo 'date'
+          
