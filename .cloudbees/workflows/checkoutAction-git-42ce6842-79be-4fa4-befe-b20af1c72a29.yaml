@@ -10,7 +10,7 @@ jobs:
           echo "hello world"
           git log -n 1 --format="%H"
           echo "$(git log -n 1 --format="%H")" > "$CLOUDBEES_OUTPUTS/id"
-        uses: docker://debian:testing-slim
+        uses: docker://alpine/git:latest
         id: sha
       - name: Publish workflow evidence item
         uses: cloudbees-io/publish-evidence-item@v1
