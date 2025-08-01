@@ -6,6 +6,8 @@ on:
 jobs:
   Job1:
     steps:
+      - name: Checkout Repository
+        uses: cloudbees-io/checkout@v1
       - run: |
           echo "hello world"
           git log -n 1 --format="%H"
