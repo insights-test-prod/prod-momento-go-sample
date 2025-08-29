@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    environment: Approval_PROD
+    environment: approval_PROD
     steps:
       - uses: docker://golang:1.20.3-alpine3.17
         name: Say hello
