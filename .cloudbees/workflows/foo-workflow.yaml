@@ -5,4 +5,4 @@ on:
   workflow_dispatch:
 jobs:
   call_bar_workflow:
-    uses: cbp-test-prod/prod-python-hello-world/.cloudbees/workflows/check-workflow-run.yaml 
+    uses: cbp-test-prod/prod-python-hello-world/.cloudbees/workflows/check-workflow-run.yaml
