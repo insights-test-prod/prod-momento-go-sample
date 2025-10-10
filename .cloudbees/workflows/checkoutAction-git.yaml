@@ -74,3 +74,4 @@ jobs:
           echo Ref = ${{ steps.checkout3.outputs.ref }}
           if [ "${{ steps.checkout3.outputs.commit }}" = "bfe78441b62f14786bee84c9e6ac81c759143b5c" ]; then echo "Commits are same"; else echo "Commit details dees not match, exiting."; exit 0; fi
   
+  
