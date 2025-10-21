@@ -8,10 +8,20 @@ on:
 jobs:
   build:
     timeout-minutes: 1
-    environment: approval_PROD
+    
     steps:
       - name: Say hello
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world"
+          echo "Starting 'for' loop for 90 iterations (1 per second)..."
+
+          # This loop runs 90 times
+          for i in $(seq 1 90)
+          do
+          echo "Iteration $i of 90..."
+
+          sleep 1 # Pauses the loop for 1 second
+          done
+
+          echo "Loop finished after 90 seconds."
